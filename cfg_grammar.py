@@ -1,0 +1,23 @@
+RULES_CFG = {
+    "K": [["K1"], ["K2"], ["K1", "Ket"], ["K2", "Ket"]],
+    "K1": [["S", "P"]],
+	"K2": [["S", "P", "Pel"]],
+    "S": [["NP"]],
+    "NP": [["PropNoun"], ["Pronoun"], ["Noun"], ["NP", "AdjP"], ["AdjP", "NP"], ["NumP", "NP"], ["NP", "Noun"], ["NP", "PropNoun"], ["NP", "Pronoun"], ["NP", "Adv"], ["NP", "Det"]],
+    "P": [["NumP"]],
+    "NumP": [["Num"], ["NumP", "NP"]],
+    "Pel": [["AdjP"], ["NP"], ["VP"]],
+    "AdjP": [["Adj"], ["Adv", "AdjP"]],
+    "VP": [["V"], ["VP", "NP"], ["VP", "AdjP"], ["VP", "NumP"]],
+    "Ket": [["PP"]],
+    "PP": [["Prep", "NP"], ["Prep", "Det", "NP"], ["Prep", "AdjP"], ["Prep", "NumP"]],
+    "PropNoun": [["indonesia"], ["indonesiane"]],
+    "Pronoun": [["titiang"], ["ragane"], ["icang"], ["cai"], ["nyai"], ["awake"], ["dane"], ["ipun"], ["ia"], ["ida"]],
+    "Adv": [["sesai"], ["cepok"], ["pesan"], ["gati"]],
+    "Det": [["ento"], ["punika"]],
+    "Noun": [["batisne"], ["pulo"], ["macan"], ["ekor"], ["gajah"], ["muani"], ["nyaman"], ["ujan"], ["bulan"], ["yusan"], ["sekolahne"], ["tiban"], ["macanne"], ["siap"], ["ukud"], ["cicing"], ["macan"], ["harimau"], ["adine"], ["lelawah"], ["bebek"], ["sisya-sisyane"], ["buku"], ["panes"], ["AC"], ["singane"], ["kebun"], ["biune"], ["bulih"], ["punyane"], ["untune"], ["rahangne"], ["memerine"], ["kolam"], ["taluhe"], ["paon"], ["tiing"], ["buluh"], ["banjar"], ["sampahe"], ["margane"], ["iga-iga"], ["kampil"], ["utan"], ["sejarah"], ["binatang"], ["diri"]],
+    "Num": [["dadua"], ["ribuan"], ["adiri"], ["lalima"], ["tigang"], ["dasa"], ["nem"], ["seket"], ["limang"], ["duang"], ["roras"], ["telung"], ["telung"], ["dasa"], ["kalih"], ["papat"], ["abungkul"], ["akatih"]],
+    "V": [["majajal"], ["malajah"], ["mekeber"], ["ngelangi"], ["maca"], ["ngangge"], ["dadi"]],
+    "Prep": [["di"], ["ring"], ["mukak"], ["ke"], ["uli"]],
+    "Adj": [["galak"], ["gede-gede"], ["bagus"], ["gelem"], ["mati"], ["ngambul"], ["dingin"], ["galak-galak"], ["mokoh-mokoh"], ["berek"], ["cenik"], ["dalem"], ["lantang"], ["mebrarakan"], ["selem"], ["poleng"]]
+}
